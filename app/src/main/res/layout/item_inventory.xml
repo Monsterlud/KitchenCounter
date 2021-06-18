@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_inventoryitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/alabaster"
+        app:contentPadding="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivInventory_inventoryitem"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_baseline_inventory_24"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvProductName_inventoryitem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Product Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/ivInventory_inventoryitem"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvProductDescription_inventoryitem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto"
+                android:text="product description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lotus"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/tvProductName_inventoryitem"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvTIMESTAMP_inventoryitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="inventory date:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@id/tvProductDescription_inventoryitem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvTimestamp_inventoryitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto"
+                android:hint="date"
+                android:inputType="date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@id/tvTIMESTAMP_inventoryitem"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvAMOUNT_inventoryitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="amount:"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivInventory_inventoryitem"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductName_inventoryitem"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvAmount_inventoryitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/roboto"
+                android:hint="amount"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvAMOUNT_inventoryitem"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductName_inventoryitem" />
+
+            <TextView
+                android:id="@+id/tvUnitType_inventoryitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/roboto"
+                android:hint="unit type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvAmount_inventoryitem"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductName_inventoryitem" />
+
+            <TextView
+                android:id="@+id/tvLOCATION_inventoryitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="location:"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvUnitType_inventoryitem"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductDescription_inventoryitem" />
+
+            <TextView
+                android:id="@+id/tvLocation_inventoryitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/roboto"
+                android:hint="inventory location"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/lotus"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvLOCATION_inventoryitem"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.968" />
+
+
+            <ImageView
+                android:id="@+id/ivDelete_inventoryitem"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

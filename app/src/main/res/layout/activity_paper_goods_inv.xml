@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/papergoodinv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Inventory.PaperGood.PaperGoodsInvActivity">
+
+
+    <FrameLayout
+        android:id="@+id/listLayout_papergood"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/detailLayout_papergood"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/detailLayout_papergood"
+        android:layout_width="500dp"
+        android:layout_height="900dp"
+        app:layout_constraintBottom_toTopOf="@+id/reviewinv_papergood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listLayout_papergood"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/reviewinv_papergood"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".6"
+        app:layout_constraintStart_toEndOf="@+id/listLayout_papergood"
+        app:layout_constraintTop_toBottomOf="@+id/detailLayout_papergood">
+
+        <TextView
+            android:id="@+id/tvReviewInv_papergood"
+            android:layout_width="490dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonreview_papergood"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Review Inventory &amp; Submit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

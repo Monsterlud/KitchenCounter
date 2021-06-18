@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glitter"
+    tools:context=".UI.Order.OrderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvEmployeeName_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Employee Name"
+            android:textColor="@color/charcoal"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTodayDate_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Today's Date"
+            android:textColor="@color/charcoal"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvKITCHENCOUNTER_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="KitchenCounter+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="@color/cornellRed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.086" />
+
+        <TextView
+            android:id="@+id/tvORDERREVIEW_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Order Review"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvKITCHENCOUNTER_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvProductName_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="product name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/charcoal"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvORDERREVIEW_orderfragment" />
+
+        <TextView
+            android:id="@+id/comma_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=","
+            android:textColor="@color/charcoal"
+            android:textSize="36sp"
+            app:layout_constraintStart_toEndOf="@id/tvProductName_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvORDERREVIEW_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvProductDescription_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="product description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/charcoal"
+            android:textSize="36sp"
+            app:layout_constraintStart_toEndOf="@+id/comma_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvORDERREVIEW_orderfragment" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductDescription_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvINVENTORYAMOUNT_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="450dp"
+            android:fontFamily="@font/roboto"
+            android:text="Inventory Amount: "
+            android:textColor="@color/deepMustard"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductDescription_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvInventoryAmount_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="amount"
+            android:textColor="@color/deepMustard"
+            android:textSize="28dp"
+            app:layout_constraintStart_toEndOf="@+id/tvINVENTORYAMOUNT_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductDescription_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvInvUnit_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="unit"
+            android:textColor="@color/deepMustard"
+            android:textSize="28dp"
+            app:layout_constraintStart_toEndOf="@id/tvInventoryAmount_orderfragment"
+            app:layout_constraintTop_toBottomOf="@id/tvProductDescription_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvREQUESTAMOUNT_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="450dp"
+            android:fontFamily="@font/roboto"
+            android:text="Requested Amount: "
+            android:textColor="@color/deepMustard"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvINVENTORYAMOUNT_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvRequestAmount_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="amount"
+            android:textColor="@color/deepMustard"
+            android:textSize="28dp"
+            app:layout_constraintStart_toEndOf="@+id/tvREQUESTAMOUNT_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvINVENTORYAMOUNT_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvReqUnit_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:elevation="7dp"
+            android:fontFamily="@font/roboto"
+            android:text="unit"
+            android:textColor="@color/deepMustard"
+            android:textSize="28dp"
+            app:layout_constraintStart_toEndOf="@id/tvRequestAmount_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvINVENTORYAMOUNT_orderfragment" />
+
+
+        <TextView
+            android:id="@+id/tvORDERAMOUNT_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="452dp"
+            android:fontFamily="@font/roboto"
+            android:text="ORDER AMOUNT: "
+            android:textColor="@color/orange"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvREQUESTAMOUNT_orderfragment" />
+
+        <EditText
+            android:id="@+id/etOrderAmount_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="amount"
+            android:inputType="numberDecimal"
+            android:textColor="@color/orange"
+            android:textSize="28dp"
+            app:layout_constraintStart_toEndOf="@+id/tvORDERAMOUNT_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvREQUESTAMOUNT_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvORDERUNIT_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="454dp"
+            android:fontFamily="@font/roboto"
+            android:text="ORDER UNIT: "
+            android:textColor="@color/orange"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvORDERAMOUNT_orderfragment" />
+
+        <Spinner
+            android:id="@+id/spinUnit_orderfragment"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tvORDERUNIT_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvORDERAMOUNT_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvORDERDDATE_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="456dp"
+            android:fontFamily="@font/roboto"
+            android:text="DELIVERY DATE: "
+            android:textColor="@color/orange"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvORDERUNIT_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvDeliveryDate_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="delivery date"
+            android:textColor="@color/orange"
+            android:textSize="28dp"
+            app:layout_constraintStart_toEndOf="@+id/tvORDERDDATE_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvORDERUNIT_orderfragment" />
+
+        <TextView
+            android:id="@+id/tvVENDOR_orderfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="458dp"
+            android:fontFamily="@font/roboto"
+            android:text="VENDOR: "
+            android:textColor="@color/orange"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryDate_orderfragment" />
+
+        <Spinner
+            android:id="@+id/spinVendor_orderfragment"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tvVENDOR_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryDate_orderfragment" />
+
+        <Button
+            android:id="@+id/btnOrder_orderfragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="260dp"
+            android:background="@drawable/button_standard"
+            android:fontFamily="@font/roboto"
+            android:text="Order"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvVENDOR_orderfragment" />
+
+        <Button
+            android:id="@+id/btnCancel_orderfragment"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/button_standard"
+            android:fontFamily="@font/roboto"
+            android:text="Cancel"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btnOrder_orderfragment"
+            app:layout_constraintTop_toBottomOf="@+id/tvVENDOR_orderfragment" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

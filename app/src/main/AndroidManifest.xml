@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.monsalud.kitchencounter">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KitchenCounter">
+        <activity
+            android:name=".UI.Order.OrderSheetsActivity"
+            android:theme="@style/OrderSheets"/>
+        <activity
+            android:name=".UI.Order.OrderMainActivity"
+            android:label="Order"
+            android:parentActivityName=".UI.MainActivity"
+            android:theme="@style/Order" />
+        <activity
+            android:name=".UI.Request.RequestReviewActivity"
+            android:label="Review Requests"
+            android:theme="@style/RequestReview" />
+        <activity
+            android:name=".UI.Inventory.InventoryReviewActivity"
+            android:label="Review Inventory"
+            android:theme="@style/InventoryReview" />
+        <activity
+            android:name=".UI.Request.Beverage.BeverageReqActivity"
+            android:label="Beverage Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/Beverages" />
+        <activity
+            android:name=".UI.Request.Dairy.DairyReqActivity"
+            android:label="Dairy Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/Dairy" />
+        <activity
+            android:name=".UI.Request.DryGood.DryGoodsReqActivity"
+            android:label="Dry Goods Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/DryGoods" />
+        <activity
+            android:name=".UI.Request.Fruit.FruitReqActivity"
+            android:label="Fruit Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/Fruit" />
+        <activity
+            android:name=".UI.Request.JanitorialGood.JanitorialGoodsReqActivity"
+            android:label="Janitorial Goods Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/JanitorialGoods" />
+        <activity
+            android:name=".UI.Request.Meat.MeatReqActivity"
+            android:label="Meat Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/Meat" />
+        <activity
+            android:name=".UI.Request.PaperGood.PaperGoodsReqActivity"
+            android:label="Paper Good Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/PaperGoods" />
+        <activity
+            android:name=".UI.Request.Seafood.SeafoodReqActivity"
+            android:label="Seafood Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/Seafood" />
+        <activity
+            android:name=".UI.Request.Vegetable.VegetableReqActivity"
+            android:label="Vegetable Request"
+            android:parentActivityName=".UI.Request.RequestMainActivity"
+            android:theme="@style/Vegetable" />
+        <activity
+            android:name=".UI.Inventory.PaperGood.PaperGoodsInvActivity"
+            android:label="Paper Goods Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/PaperGoods" />
+        <activity
+            android:name=".UI.Inventory.Meat.MeatInvActivity"
+            android:label="Meat Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/Meat" />
+        <activity
+            android:name=".UI.Inventory.JanitorialGood.JanitorialGoodsInvActivity"
+            android:label="Janitorial Goods Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/JanitorialGoods" />
+        <activity
+            android:name=".UI.Inventory.DryGood.DryGoodsInvActivity"
+            android:label="Dry Goods Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/DryGoods" />
+        <activity
+            android:name=".UI.Inventory.Dairy.DairyInvActivity"
+            android:label="Dairy Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/Dairy" />
+        <activity
+            android:name=".UI.Inventory.Beverage.BeverageInvActivity"
+            android:label="Beverage Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/Beverages" />
+        <activity
+            android:name=".UI.Inventory.Fruit.FruitInvActivity"
+            android:label="Fruit Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/Fruit" />
+        <activity
+            android:name=".UI.Inventory.Seafood.SeafoodInvActivity"
+            android:label="Seafood Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/Seafood" />
+        <activity
+            android:name=".UI.Inventory.Vegetable.VegetableInvActivity"
+            android:label="Produce Inventory"
+            android:parentActivityName=".UI.Inventory.InventoryMainActivity"
+            android:theme="@style/Vegetable" />
+        <activity android:name=".UI.Request.RequestMainActivity" />
+        <activity android:name=".UI.Inventory.InventoryMainActivity" />
+        <activity android:name=".UI.MainActivity" />
+        <activity android:name=".UI.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

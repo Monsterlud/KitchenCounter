@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ordermain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Order.OrderMainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="940dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bigbutton_paleoyster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvORDER_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Order - "
+            android:textColor="@color/woodrush"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEmployeeName_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Employee Name"
+            android:textColor="@color/woodrush"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/tvORDER_order"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTODAYDATE_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingStart="2dp"
+            android:text="Today's Date:"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toStartOf="@id/tvDate_order"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/tvDate_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="60dp"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="date" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/ACTV_itemsearchdropdown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:background="@color/milkPunch"
+                
+                android:text="Filter Table"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TableLayout
+            android:id="@+id/tblTableHeader_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:text="ITEM"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="155dp"
+                    android:padding="6dp"
+                    android:text="description"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:padding="6dp"
+                    android:text="inv unit"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:padding="6dp"
+                    android:text="INV"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="80dp"
+                    android:padding="6dp"
+                    android:text="REQ"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:padding="6dp"
+                    android:text="ORD"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:padding="6dp"
+                    android:text="unit"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="110dp"
+                    android:padding="6dp"
+                    android:text="vendor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="110dp"
+                    android:padding="6dp"
+                    android:text="DATE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/woodrush"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_order"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/item_orders" />
+
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clGenerateOrderLayout_order"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bigbutton_paleoyster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <Button
+            android:id="@+id/btnGenerateOrders_order"
+            android:layout_width="440dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button_standard"
+            android:fontFamily="@font/roboto"
+            android:onClick="onCreateOrderSheet"
+            android:text="Generate Order Sheet"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="@+id/clGenerateOrderLayout_order" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

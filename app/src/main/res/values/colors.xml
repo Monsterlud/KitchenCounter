@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="seashell">#F1F1F1</color>
+
+
+    //Application
+    <color name ="order">#EBE5E5</color>
+    <color name="aluminum">#828282</color>
+    <color name="charcoal">#43413E</color>
+    <color name="citrine">#D9D200</color>
+    <color name="solitude">#DADADA</color>
+    <color name="orange">#FBA600</color>
+    <color name="darkorange">#F07500</color>
+    <color name="deepMustard">#6E6200</color>
+
+    //Vegetable
+    <color name="apple">#E6FFE6</color>
+    <color name="fernGreen">#C3ECC3</color>
+    <color name="dell">#2B6816</color>
+    <color name="vegetable">#60C53D</color>
+
+    //Fruit
+    <color name="lazerLemon">#FEF2F8</color>
+    <color name="lucky">#FAD5E9</color>
+    <color name="olive">#6C1143</color>
+    <color name="fruit">#CB1579</color>
+
+    //Seafood
+    <color name="brightTurquose">#E9F9FF</color>
+    <color name="blueGreen">#B1EFFB</color>
+    <color name="deepSeaGreen">#065560</color>
+
+    //Dairy
+    <color name="alabaster">#FDFDF1</color>
+    <color name="coconutCream">#F8F8DC</color>
+    <color name="chiffon">#9F8100</color>
+
+    //Meat
+    <color name="deepCarminePink">#F6DEDE</color>
+    <color name="sundown">#F7AAAA</color>
+    <color name="cornellRed">#E84444</color>
+    <color name="persianPlum">#6E1B1B</color>
+    <color name="meat">#6E1B1B</color>
+
+    //DryGoods
+    <color name="heliotrope">#F6F8FF</color>
+    <color name="vividViolet">#E4E9FF</color>
+    <color name="honeyFlower">#662CFF</color>
+    <color name="drygoods">#20036D</color>
+
+    //Beverages
+    <color name="almondFrost">#EAE1DC</color>
+    <color name="sprigWood">#C5B9B2</color>
+    <color name="romanCoffee">#685757</color>
+    <color name="sambuca">#3E2313</color>
+
+    //PaperGoods
+    <color name="orangePeel">#FFEDDE</color>
+    <color name="darkerPeel">#EDD0A1</color>
+    <color name="ginger">#ff9d00</color>
+    <color name="nutmegWoodFinish">#684200</color>
+
+    //JanitorialGoods
+    <color name="sweetPink">#E8EBE8</color>
+    <color name="geyser">#CDD4CD</color>
+    <color name="contessa">#798479</color>
+    <color name="lotus">#4F584F</color>
+
+    //OrderSheets
+    <color name="zircon">#F6F9FF</color>
+    <color name="glitter">#E6EEFF</color>
+    <color name="madras">#4F431E</color>
+
+    //Order
+    <color name="paleOyster">#CAC6C0</color>
+    <color name="woodrush">#463C2D</color>
+    <color name="milkPunch">#FFF8D5</color>
+
+
+</resources>

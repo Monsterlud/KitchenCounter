@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+
+
+    <TextView
+        android:id="@+id/tvITEM_orderitem"
+        android:layout_width="90dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:background="@color/zircon"
+        android:text="ITEMNAME"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDESCRIPTION_orderitem"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:background="@color/zircon"
+        android:text="DESCRIPTION"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/tvITEM_orderitem"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvInventoryUnit_orderitem"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@color/zircon"
+        android:text="DEFAULT UNIT"
+        android:textSize="14dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/tvDESCRIPTION_orderitem"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvINVENTORY_orderitem"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/milkPunch"
+        android:text="INV"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/darkorange"
+        app:layout_constraintStart_toEndOf="@id/tvInventoryUnit_orderitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvREQUEST_orderitem"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:background="@color/milkPunch"
+        android:text="REQ"
+        android:textAlignment="center"
+        android:textColor="@color/darkorange"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvINVENTORY_orderitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvORDER_orderitem"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/milkPunch"
+        android:text="ORD"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/darkorange"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="18dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@id/tvREQUEST_orderitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOrderUnit_orderitem"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/zircon"
+        android:gravity="center"
+        android:textColor="@color/darkorange"
+        android:text="ORD UNIT"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@id/tvORDER_orderitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVENDOR_orderitem"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/zircon"
+        android:text="VENDORNAME"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tvOrderUnit_orderitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvDELIVERYDATE_orderitem"
+        android:layout_width="90dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/milkPunch"
+        android:text="DELIVERY DATE"
+        android:inputType="date"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tvVENDOR_orderitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivADDTOORDERS_orderitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_add_circle_outline_24"
+        app:layout_constraintStart_toEndOf="@id/tvDELIVERYDATE_orderitem"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

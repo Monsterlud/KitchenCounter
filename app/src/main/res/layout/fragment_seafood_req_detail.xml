@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="490dp"
+    android:layout_height="900dp"
+    tools:context=".UI.Request.Seafood.SeafoodReqDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="890dp"
+        android:layout_gravity="center"
+        android:background="@drawable/detail_request">
+
+        <TextView
+            android:id="@+id/tvSeafoodName_reqseafooddetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Seafood Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/deepSeaGreen"
+            android:textSize="42sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvSeafoodType_reqseafooddetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="seafood type"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/deepSeaGreen"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeafoodName_reqseafooddetail" />
+
+        <TextView
+            android:id="@+id/tvPRODUCTID_reqseafooddetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:text="product ID:"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/deepSeaGreen"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeafoodType_reqseafooddetail" />
+
+        <TextView
+            android:id="@+id/tvProductId_reqseafooddetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="product id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/tvPRODUCTID_reqseafooddetail"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeafoodType_reqseafooddetail" />
+
+
+        <TextView
+            android:id="@+id/tvEmployeeName_reqseafooddetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/roboto"
+            android:text="Employee Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/deepSeaGreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeafoodType_reqseafooddetail" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/deepSeaGreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmployeeName_reqseafooddetail" />
+
+        <LinearLayout
+            android:id="@+id/rowAmount_reqseafooddetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmployeeName_reqseafooddetail">
+
+
+            <TextView
+                android:id="@+id/tvAMOUNT_reqseafooddetail"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="AMOUNT:"
+                android:textColor="@color/deepSeaGreen"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etAmount_reqseafooddetail"
+                android:layout_width="376dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/alabaster"
+                android:ems="10"
+                android:hint="request amount"
+                android:inputType="numberDecimal"
+                android:textColor="@color/charcoal"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowUnit_reqseafooddetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rowAmount_reqseafooddetail">
+
+            <TextView
+                android:id="@+id/tvUNIT_reqseafooddetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="UNIT:"
+                android:textColor="@color/deepSeaGreen"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvUnit_reqseafooddetail"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="unit type"
+                android:background="@color/alabaster"
+                android:textSize="24dp"
+                android:textColor="@color/charcoal"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnADDTOREQUESTS_reqseafooddetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_standard"
+            android:fontFamily="@font/roboto"
+            android:text="Add to Requests"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rowUnit_reqseafooddetail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

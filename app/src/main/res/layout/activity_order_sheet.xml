@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="NamespaceTypo"
+    android:layout_height="fill_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Order.OrderSheetsActivity">
+
+    <TextView
+        android:id="@+id/tvORDERS_ordersheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="ORDERS - "
+        android:textColor="@color/charcoal"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDate_ordersheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="today's date"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/tvORDERS_ordersheet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmployee_ordersheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="employee name"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvORDERS_ordersheet" />
+
+    <TextView
+        android:id="@+id/tvKITCHENCOUNTER_ordersheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  KitchenCounter+  "
+        android:textSize="40dp"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/white"
+        android:background="@color/madras"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutfarmergreen_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvORDERS_ordersheet">
+
+        <TextView
+            android:id="@+id/tvFARMERGREEN_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Farmer Green Produce"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvFARMERGREENphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvFARMERGREEN_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFARMERGREENemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvFARMERGREENphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerfarmergreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFARMERGREEN_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutorganiccity_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutfarmergreen_ordersheet">
+
+        <TextView
+            android:id="@+id/tvORGANICCITY_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Organic City Produce"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvORGANICCITYphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvORGANICCITY_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvORGANICCITYemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvORGANICCITYphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerorganiccity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvORGANICCITY_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutbigranch_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutorganiccity_ordersheet">
+
+        <TextView
+            android:id="@+id/tvBIGRANCH_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Big Ranch Meats"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvBIGRANCHphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvBIGRANCH_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvBIGRANCHemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvBIGRANCHphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerbigranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBIGRANCH_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutfattedcalf_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutbigranch_ordersheet">
+
+        <TextView
+            android:id="@+id/tvFATTEDCALF_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Fatted Calf Charcuterie"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvFATTEDCALFphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvFATTEDCALF_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFATTEDCALFemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvFATTEDCALFphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerfattedcalf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFATTEDCALF_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutreallybig_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutfattedcalf_ordersheet">
+
+        <TextView
+            android:id="@+id/tvREALLYBIG_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Really Big Food Company"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvREALLYBIGphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvREALLYBIG_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvREALLYBIGemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvREALLYBIGphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerreallybig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvREALLYBIG_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutbetsycowgirl_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutreallybig_ordersheet">
+
+        <TextView
+            android:id="@+id/tvBETSYCOWGIRL_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Betsy the Cowgirl Dairy"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvBETSYCOWGIRLphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvBETSYCOWGIRL_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvBETSYCOWGIRLemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvBETSYCOWGIRLphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerbetsycowgirl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBETSYCOWGIRL_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutpacificseafood_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutbetsycowgirl_ordersheet">
+
+        <TextView
+            android:id="@+id/tvPACIFICSEAFOOD_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Pacific Seafood"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPACIFICSEAFOODphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvPACIFICSEAFOOD_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPACIFICSEAFOODemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvPACIFICSEAFOODphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerpacificseafood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPACIFICSEAFOOD_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutregalbeverages_ordersheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutpacificseafood_ordersheet"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tvREGALBEVERAGES_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Regal Beverages"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvREGALBEVERAGESphone_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvREGALBEVERAGES_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="phone number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvREGALBEVERAGESemail_ordersheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@id/tvREGALBEVERAGESphone_ordersheet"
+            android:fontFamily="@font/roboto"
+            android:text="email address"
+            android:textSize="14sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerregalbeverages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvREGALBEVERAGES_ordersheet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            tools:listitem="@layout/item_ordersheet"/>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

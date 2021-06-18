@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KitchenCounter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/aluminum</item>
+        <item name="colorPrimaryVariant">@color/charcoal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Vegetable" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/fernGreen</item>
+        <item name="colorPrimary">@color/dell</item>
+        <item name="colorPrimaryVariant">@color/apple</item>
+    </style>
+
+    <style name="Fruit" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/lucky</item>
+        <item name="colorPrimary">@color/olive</item>
+        <item name="colorPrimaryVariant">@color/lazerLemon</item>
+    </style>
+
+    <style name="Seafood" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/blueGreen</item>
+        <item name="colorPrimary">@color/deepSeaGreen</item>
+        <item name="colorPrimaryVariant">@color/brightTurquose</item>
+    </style>
+
+    <style name="Dairy" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/coconutCream</item>
+        <item name="colorPrimary">@color/chiffon</item>
+        <item name="colorPrimaryVariant">@color/alabaster</item>
+    </style>
+
+    <style name="Meat" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/cornellRed</item>
+        <item name="colorPrimary">@color/persianPlum</item>
+        <item name="colorPrimaryVariant">@color/deepCarminePink</item>
+    </style>
+
+    <style name="DryGoods" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/vividViolet</item>
+        <item name="colorPrimary">@color/drygoods</item>
+        <item name="colorPrimaryVariant">@color/heliotrope</item>
+    </style>
+
+    <style name="Beverages" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/romanCoffee</item>
+        <item name="colorPrimary">@color/sambuca</item>
+        <item name="colorPrimaryVariant">@color/almondFrost</item>
+    </style>
+
+    <style name="PaperGoods" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/ginger</item>
+        <item name="colorPrimary">@color/nutmegWoodFinish</item>
+        <item name="colorPrimaryVariant">@color/orangePeel</item>
+    </style>
+
+    <style name="JanitorialGoods" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/contessa</item>
+        <item name="colorPrimary">@color/lotus</item>
+        <item name="colorPrimaryVariant">@color/sweetPink</item>
+    </style>
+
+    <style name="InventoryReview" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/citrine</item>
+        <item name="colorPrimary">@color/citrine</item>
+        <item name="colorPrimaryVariant">@color/alabaster</item>
+    </style>
+
+    <style name="OrderSheets" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/glitter</item>
+        <item name="colorPrimary">@color/madras</item>
+        <item name="colorPrimaryVariant">@color/zircon</item>
+    </style>
+
+    <style name="RequestReview" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/ginger</item>
+        <item name="colorPrimary">@color/ginger</item>
+        <item name="colorPrimaryVariant">@color/ginger</item>
+    </style>
+
+    <style name="Order" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="statusBarBackground">@color/woodrush</item>
+        <item name="colorPrimary">@color/woodrush</item>
+        <item name="colorPrimaryVariant">@color/paleOyster</item>
+    </style>
+
+
+
+
+</resources>

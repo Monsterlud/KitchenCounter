@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/solitude"
+    tools:context=".UI.Request.RequestMainActivity">
+
+    <ImageView
+        android:id="@+id/ivBackButton_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvREQUEST_requestmain"
+        app:layout_constraintEnd_toStartOf="@+id/tvKITCHENCOUNTER_requestmain"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/tvREQUEST_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="REQUEST"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/charcoal"
+        app:layout_constraintBottom_toTopOf="@+id/tvFruit_requestmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKITCHENCOUNTER_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="KitchenCounter+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/charcoal"
+        app:layout_constraintBottom_toTopOf="@+id/tvREQUEST_requestmain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFruit_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/squarebutton_fruit"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Fruit"
+        android:textColor="@color/alabaster"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMeat_requestmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDryGoods_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/squarebutton_drygoods"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Dry \nGoods"
+        android:textColor="@color/alabaster"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMeat_requestmain"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMeat_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/squarebutton_meat"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Meat"
+        android:textColor="@color/alabaster"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvDairy_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/squarebutton_dairy"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Dairy"
+        android:textColor="@color/aluminum"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvMeat_requestmain"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSeafood_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/squarebutton_seafood"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Seafood"
+        android:textColor="@color/deepSeaGreen"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDryGoods_requestmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toEndOf="@+id/tvFruit_requestmain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvBeverages_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/squarebutton_beverages"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Beverages"
+        android:textColor="@color/alabaster"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDairy_requestmain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvPaperGoods_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/squarebutton_papergoods"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Paper \nGoods"
+        android:textColor="@color/alabaster"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMeat_requestmain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvProduce_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/squarebutton_produce"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Produce"
+        android:textColor="@color/alabaster"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDairy_requestmain"
+        app:layout_constraintEnd_toStartOf="@+id/tvFruit_requestmain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvJanitorialGoods_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/squarebutton_janitorialgoods"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:text="Janitorial \nGoods"
+        android:textColor="@color/alabaster"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDryGoods_requestmain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvCopyright_requestmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="©2021 Douglas Monsalud"
+        android:textColor="@color/aluminum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
