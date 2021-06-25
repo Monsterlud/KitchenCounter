@@ -26,10 +26,10 @@ and Tables (including Views). The programming language is Java.
 ## Class Diagram
 The structure of this application is in this diagram:
 
-
+![kitchencounter class diagram](images/kc_classdiagram.png)
 
 ## User Interface
-
+The UI is divided into three sections: INVENTORY, REQUEST, and ORDER. 
 
 
 
