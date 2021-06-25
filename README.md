@@ -10,4 +10,4 @@ a team-oriented inventory, request, and order system for food service organizati
 
 
 
-[kclogo]: /image/kclogo.pdf
+[kclogo]: /image/kc logo.pdf
