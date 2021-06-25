@@ -46,7 +46,13 @@ product section to add more to inventory, or submit their daily inventory to the
 
 ![kitchencounter inventory review](images/kc_inv_review.png) ![kitchencounter request review](images/kc_req_review.png)
 
+After the INVENTORY and REQUEST activities are finished, the purchasing manager can enter the ORDER 
+screen to review the numbers. They can add items from this table and, once their order is completed,
+they can navigate to an order sheet. Items are now organized by Vendor and can be deleted from this screen 
+if needed. The screen keeps track of orders as they are placed and there is a share function that
+allows the purchasing manager to alert anyone on the team (e.g. the morning receiver)
 
+![kitchencounter order sheet](images/kc_order.png) ![kitchencounter order guide](images/kc_ordersheet.png) ![kitchencounter share screen](images/kc_share.png)
 
 
 
