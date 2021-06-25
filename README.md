@@ -1,4 +1,4 @@
-![][kclogo](/images/kc_logo.pdf)
+![][kclogo](kc_logo.pdf)
 # KitchenCounter
 a team-oriented inventory, request, and order system for food service organizations
 
