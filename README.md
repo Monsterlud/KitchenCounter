@@ -9,6 +9,6 @@ a team-oriented inventory, request, and order system for food service organizati
 - Android tablet application
 - database currently stored locally using SQLite; future plans for cloud-based migration
 
-[kclogo] /Monsterlud/KitchenCounter/images/kc_logo.pdf
+[kclogo] /images/kc_logo.pdf
 
 
