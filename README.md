@@ -15,7 +15,8 @@ team via text or email.
 
 ## Build Status
 - in progress; started 05/21
-- order section is in progress
+- ORDER section is in progress
+- the sharing function in the ORDER section is in progress
 - I have later plans to move the database to cloud storage; for now the DB is stored on device
 
 ## Code Style
@@ -53,6 +54,12 @@ if needed. The screen keeps track of orders as they are placed and there is a sh
 allows the purchasing manager to alert anyone on the team (e.g. the morning receiver)
 
 ![kitchencounter order sheet](images/kc_order.png) ![kitchencounter order guide](images/kc_ordersheet.png) ![kitchencounter share screen](images/kc_share.png)
+
+## Installation
+This repository contains the files needed to run the application on Android Studio (emulator or device). There
+is no APK. The code is currently configured to erase the database each time you run the application so that 
+there is a clean database to work with. There is a small section in the KCDatabse class that can be
+commented out for persistent storage.
 
 
 
