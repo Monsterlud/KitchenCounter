@@ -11,4 +11,4 @@ a team-oriented inventory, request, and order system for food service organizati
 
 
 
-[kclogo]: (https://github.com/Monsterlud/KitchenCounter/images/kc logo.pdf?raw=true)
+[kclogo]: https://github.com/Monsterlud/KitchenCounter/images/kc logo.pdf?raw=true
