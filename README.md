@@ -29,14 +29,25 @@ The structure of this application is in this diagram:
 ![kitchencounter class diagram](images/kc_classdiagram.png)
 
 ## User Interface
-![kitchencounter login screen](images/kc_login.png)
+![kitchencounter login](images/kc_login.png)  ![kitchencounter main](images/kc_main.png)  ![kitchencounter inventory](images/kc_inventory.png)
 
-There is a simple login page that gives you access to the app. 
+There is a simple login page that gives you access to the app. The main UI is divided into 
+three sections: INVENTORY, REQUEST, and ORDER. The main screen gives the user a simple choice
+of which section they would like to enter. In the INVENTORY and REQUEST sections there is a 
+main screen that displays the nine categories of products that can be counted. 
+
+![kitchencounter vegetables](images/kc_vegetable.png)
+
+Once the user has entered a product area, they are presented with a scrollable list of product
+to count and a detail section in which to add a count to the total. The REQUEST section is
+almost identical. Both INVENTORY and REQUEST data entry screens give the user a chance to 
+navigate directly to the review section where they have a chance to delete items, go back to a 
+product section to add more to inventory, or submit their daily inventory to the ORDER database.
+
+![kitchencounter inventory review](images/kc_inv_review.png) ![kitchencounter request review](images/kc_req_review.png)
 
 
-The UI is divided into three sections: INVENTORY, REQUEST, and ORDER. In the INVENTORY
-and REQUEST sections there is a main screen that displays the nine categories of 
-products that can be counted. In each of 
+
 
 
 
