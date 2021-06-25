@@ -1,4 +1,4 @@
-![kitchencounter logo][kclogo] 
+![kitchencounter logo](/Monsterlud/KitchenCounter/images/kc_logo.pdf)
 # KitchenCounter
 a team-oriented inventory, request, and order system for food service organizations
 
@@ -11,4 +11,4 @@ a team-oriented inventory, request, and order system for food service organizati
 
 
 
-[kclogo]: /Monsterlud/KitchenCounter/images/kc_logo.pdf
+
