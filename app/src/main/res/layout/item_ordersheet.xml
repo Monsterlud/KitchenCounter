@@ -112,21 +112,22 @@
         app:layout_constraintStart_toEndOf="@id/tvOrderUnit_ordersheetitem"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/ivOrdered_ordersheetitem"-->
-<!--        android:layout_width="44dp"-->
-<!--        android:layout_height="37dp"-->
-<!--        android:layout_marginStart="3dp"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/tvDELIVERYDATE_ordersheetitem"-->
-<!--        tools:ignore="MissingConstraints" />-->
+    <ImageView
+        android:id="@+id/ivOrdered_ordersheetitem"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/ic_baseline_check_box_dark"
+        app:layout_constraintStart_toEndOf="@+id/tvDELIVERYDATE_ordersheetitem"
+        tools:ignore="MissingConstraints" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/ivDelete_ordersheetitem"-->
-<!--        android:layout_width="44dp"-->
-<!--        android:layout_height="37dp"-->
-<!--        android:layout_marginStart="3dp"-->
-<!--        android:background="@drawable/ic_baseline_delete_24"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/ivOrdered_ordersheetitem"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <ImageView
+        android:id="@+id/ivDelete_ordersheetitem"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintStart_toEndOf="@+id/ivOrdered_ordersheetitem"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
