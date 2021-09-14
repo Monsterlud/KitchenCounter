@@ -1,7 +1,11 @@
 
 ![kitchencounter_logo](images/kc_logo.png) 
 # KitchenCounter+
-a team-oriented inventory, request, and order system for food service 
+This was a class project at WGU. Although I learned quite a bit during the 
+development of this app, I acknowledge that this is spaghetti code at it's most 
+delicious. I plan on taking another wack at this after I finish GrooveStock. 
+
+**KitchenCounter+** is team-oriented inventory, request, and order system for food service 
 organizations. Using Android tablets, the entire kitchen team can use 
 the **KitchenCounter+** software to aggregate and automate the ordering 
 process. The software's main principle is that the traditional ordering 
