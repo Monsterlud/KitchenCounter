@@ -1,5 +1,5 @@
 
-![kitchencounter_logo](images/kc_logo.png) 
+![kitchencounter_logo](images/kc+_logo.png) 
 # KitchenCounter+
 This was a class project at WGU. Although I learned quite a bit during the 
 development of this app, I acknowledge that this is spaghetti code in all of it's carbo-loaded
