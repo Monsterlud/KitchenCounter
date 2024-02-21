@@ -1,11 +1,7 @@
 
 ![kitchencounter_logo](images/kc+_logo.png) 
 # KitchenCounter+
-This was the final capstone project at WGU. Although I learned quite a bit during the 
-development of this app, I acknowledge that this is spaghetti code in all of it's 
-carbo-loaded glory. I plan on taking another stab at this after I finish GrooveStock,
-as it is based on a real-work need that I experienced while working at Pixar Animation
-Studios. 
+This was the final capstone project at WGU. 
 
 **KitchenCounter+** is team-oriented inventory, request, and order system for food 
 service organizations. Using Android tablets, the entire kitchen team can use 
